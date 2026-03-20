@@ -1,15 +1,14 @@
 name: CICD
 
 on: 
- push:
-   branches: [main]
-
+  push:
+    branches: [main]
+    
 jobs:
 
 
   greet:
-  
     runs-on: ubuntu-latest
-  steps:
-     name: Say Hello to Users
-     run: echo "Hello Jitendra"
+    steps:
+     - name: Say Hello to Users
+       run: echo "Hello Jitendra"
